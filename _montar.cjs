@@ -26,8 +26,8 @@ const PALETA = [
 ];
 PALETA.forEach(([de, para]) => { css = typeof de === 'string' ? css.split(de).join(para) : css.replace(de, para); });
 css = css.replace('</style>', `
-  /* hero no celular: -15px entre subheadline e imagem, -10px entre imagem e botao (06/11) */
-  @media(max-width:820px){.hero-img{margin:9px 0 0}.hero-btn{margin-top:16px}}
+  /* hero no celular: -20px entre subheadline e imagem, -10px entre imagem e botao (06/11) */
+  @media(max-width:820px){.hero-img{margin:4px 0 0}.hero-btn{margin-top:16px}}
   /* ---------- CARROSSEL DE FOTOS DOS PETS (topo da secao dores, 06/11) ---------- */
   .pets{margin:0 0 clamp(34px,5vw,48px);gap:12px;padding-bottom:0}
   .pets figure{flex:0 0 clamp(132px,18vw,180px)}
