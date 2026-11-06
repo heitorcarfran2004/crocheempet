@@ -1,0 +1,37 @@
+<!-- ============================================================
+     RASTREIO — PLACEHOLDER. Na mochila este bloco era o script da UTMify ofuscado (com o
+     pixel da mochila dentro) + o CashFlow da oferta. Aqui nao vai nenhum ID da mochila.
+     Quando o cadastrador criar o pixel desta oferta:
+       1. trocar TROCAR-PIXEL-UTMIFY pelo ID do pixel na UTMify (ou colar o snippet que ela gera);
+       2. se usar pixel da Meta direto, trocar TROCAR-PIXEL-META e tirar o comentario do bloco;
+       3. CashFlow: colar o script da oferta nova (data-offer proprio).
+     Enquanto tiver TROCAR no ID, o pixel nao carrega (nada de evento com ID falso).
+     ============================================================ -->
+
+<!-- UTMify: captura das UTMs (nao precisa de ID) -->
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+<!-- UTMify: pixel -->
+<script>
+  (function () {
+    var id = 'TROCAR-PIXEL-UTMIFY';
+    if (id.indexOf('TROCAR') === 0) return;
+    window.pixelId = id;
+    var a = document.createElement('script');
+    a.setAttribute('async', ''); a.setAttribute('defer', '');
+    a.setAttribute('src', 'https://cdn.utmify.com.br/scripts/pixel/pixel.js');
+    document.head.appendChild(a);
+  })();
+</script>
+
+<!-- Pixel da Meta (so se nao for pela UTMify) — descomentar e trocar o ID
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'TROCAR-PIXEL-META');
+  fbq('track', 'PageView');
+</script>
+-->

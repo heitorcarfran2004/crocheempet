@@ -1,0 +1,384 @@
+<body>
+
+<!-- ============ BARRA DE URGENCIA ============ -->
+<!-- 62% = de R$ 47 por R$ 17,90 (plano unico, 06/11/2026) -->
+<div class="barra">
+  <div class="l1">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    Oferta de lançamento
+  </div>
+  <div class="l2">62% de desconto — válido só hoje</div>
+</div>
+
+<!-- ============ HERO ============ -->
+<!-- hero.webp = capa real + paginas reais dos modelos 21 e 38 (montado em HTML, sem IA) -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-topo">
+      <h1>50 Modelos de Roupinhas Pet em Crochê <span class="script cr">Para Fazer em Casa</span></h1>
+      <p class="sub">Receitas com gráfico, passo a passo fotografado e tabela de medidas para você crochetar roupinhas que não se acham em pet shop. Para cachorro e gato pequeno.</p>
+    </div>
+
+    <div class="hero-img">
+      <img src="assets/hero.webp" srcset="assets/hero-420.webp 420w, assets/hero-700.webp 700w, assets/hero.webp 1100w" sizes="(max-width:820px) 85vw, 42vw" alt="Capa da apostila 50 Modelos de Roupinhas Pet em Crochê, com cachorros e gatos vestindo roupinhas de crochê, e duas páginas de receita ao fundo" width="1100" height="1100" fetchpriority="high">
+    </div>
+
+    <div class="hero-btn centro">
+      <button class="btn ir-oferta">QUERO AS 50 RECEITAS</button>
+    </div>
+
+    <ul class="checks">
+      <li><span class="ck">✓</span> 50 receitas completas em PDF para download</li>
+      <li><span class="ck">✓</span> Gráfico de cada parte da peça, com legenda dos pontos</li>
+      <li><span class="ck">✓</span> Passo a passo com 6 fotos numeradas por modelo</li>
+      <li><span class="ck">✓</span> Tabela de tamanhos do PP ao G, por medidas</li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>50</b><span>roupinhas completas</span></div>
+      <div class="stat"><b>100</b><span>páginas ilustradas</span></div>
+      <div class="stat"><b>4</b><span>tamanhos, do PP ao G</span></div>
+      <div class="stat"><b>∞</b><span>acesso vitalício</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DORES ============ -->
+<section class="dores">
+  <div class="wrap">
+    <div class="d-topo">
+      <span class="eyebrow">Talvez já tenha acontecido com você</span>
+      <h2 class="d-headline">Já tentou fazer roupinha pro seu pet e <span class="destaque">ficou torta?</span></h2>
+      <p class="d-sub">Não é falta de jeito. Roupa de bicho tem medida que roupa de gente não tem: pescoço, tórax e costas. Sem isso, nenhuma receita fecha.</p>
+    </div>
+
+    <div class="problemas">
+      <div class="problema">
+        <span class="p-ico">📱</span>
+        <b>Receita de vídeo, sem gráfico</b>
+        <p>Você pausa, volta, perde a carreira e no fim não sabe quantos pontos tinha. O vídeo mostra a mão de quem fez, nunca o mapa da peça.</p>
+      </div>
+      <div class="problema">
+        <span class="p-ico">📏</span>
+        <b>Não fica no tamanho do pet</b>
+        <p>Larga no pescoço, aperta no peito, curta nas costas. E o cachorro passa o dia tentando tirar a roupa que deu tanto trabalho.</p>
+      </div>
+      <div class="problema">
+        <span class="p-ico">🐾</span>
+        <b>É sempre o mesmo modelo</b>
+        <p>Aquele suéter listrado básico que todo mundo faz. Vestidinho com babado, capinha, fantasia: esses ninguém ensina direito.</p>
+      </div>
+    </div>
+
+    <p class="transicao">Roupinha pet não é difícil. São poucas peças e poucos pontos. O que falta é o gráfico certo e a medida certa na mão.</p>
+  </div>
+</section>
+
+<!-- ============ AMOSTRAS ============ -->
+<!-- paginas 1 REAIS de 12 modelos do entregavel v2 -->
+<section class="amostras">
+  <div class="wrap centro">
+    <span class="pill turq">Alguns dos modelos</span>
+    <h2 style="margin:16px 0 12px">Qual vai ser <span class="script tq">a primeira do seu pet?</span></h2>
+    <p class="sub">Suéter, vestidinho com babado, capinha de Natal, colete, bandana, fantasia e até touca de gatinho. Arraste para o lado e veja como cada receita é entregue.</p>
+  </div>
+  <div class="wrap">
+    <div class="trilho modelos" id="modelos">
+@@AMOSTRAS@@
+    </div>
+
+    <div class="centro" style="margin-top:44px">
+      <button class="btn ir-oferta">VER A OFERTA COMPLETA</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE VAI RECEBER ============ -->
+<section class="receber">
+  <div class="wrap centro">
+    <span class="pill">O que você recebe</span>
+    <h2 style="margin:16px 0 12px">Cada receita vem em<br><span class="script cr" style="font-size:calc(1em + 2px)">2 páginas completas</span></h2>
+    <p class="sub">Nada de foto solta sem explicação. Da lista de materiais ao último ponto, tudo o que você precisa para fazer aquela roupinha.</p>
+
+    <!-- As 2 paginas reais do Modelo 01 (Casaquinho Chocolate), um card por pagina. A imagem
+         pequena abre a versao grande (data-full) no visualizador, que so baixa no toque. -->
+    <div class="etapas" style="text-align:left">
+      <article class="etapa">
+        <div class="etapa-topo">
+          <span class="etapa-num">Página 1</span>
+          <h3>A ficha e o gráfico</h3>
+        </div>
+        <button class="etapa-img" type="button" data-full="assets/receita/p1-full.webp" aria-label="Ampliar a página 1: ficha e gráfico">
+          <img src="assets/receita/p1.webp" srcset="assets/receita/p1-sm.webp 440w, assets/receita/p1.webp 760w" sizes="(max-width:760px) 75vw, 320px" alt="Página 1 da receita Casaquinho Chocolate: foto da peça, materiais, amostra, tabela de medidas do PP ao G, gráfico de cada parte e legenda dos pontos" width="760" height="1074" loading="lazy" decoding="async">
+          <span class="lupa" aria-hidden="true">⤢</span>
+        </button>
+        <div class="etapa-corpo">
+          <p>A peça pronta, tudo o que comprar, onde medir o pet e o gráfico de cada parte, com a legenda dos pontos e a receita curta embaixo.</p>
+          <ul class="etapa-tags"><li>Materiais</li><li>Amostra</li><li>Pescoço, tórax e costas</li><li>Tabela PP ao G</li><li>Gráfico e legenda</li></ul>
+        </div>
+      </article>
+
+      <article class="etapa">
+        <div class="etapa-topo">
+          <span class="etapa-num">Página 2</span>
+          <h3>O passo a passo fotografado</h3>
+        </div>
+        <button class="etapa-img" type="button" data-full="assets/receita/p2-full.webp" aria-label="Ampliar a página 2: passo a passo fotografado">
+          <img src="assets/receita/p2.webp" srcset="assets/receita/p2-sm.webp 440w, assets/receita/p2.webp 760w" sizes="(max-width:760px) 75vw, 320px" alt="Página 2 da receita Casaquinho Chocolate: seis fotos numeradas do passo a passo, o resultado final e as dicas" width="760" height="1074" loading="lazy" decoding="async">
+          <span class="lupa" aria-hidden="true">⤢</span>
+        </button>
+        <div class="etapa-corpo">
+          <p>Seis fotos numeradas, do primeiro ponto ao acabamento, a roupinha pronta no pet e as dicas para não errar.</p>
+          <ul class="etapa-tags"><li>6 etapas com foto</li><li>Resultado final</li><li>Dicas</li></ul>
+        </div>
+      </article>
+    </div>
+
+
+    <!-- visualizador da pagina ampliada -->
+    <div class="zoom" id="zoom" hidden>
+      <button class="zoom-x" type="button" aria-label="Fechar">×</button>
+      <img alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESEJO · para que serve ============ -->
+<section class="desejo">
+  <div class="wrap centro">
+    <span class="pill">O melhor da história</span>
+    <h2 style="margin:16px 0 12px">Imagine ouvir <span class="script cr">"onde você comprou?"</span></h2>
+    <p class="sub">No meio do passeio, de quem parou só para olhar. E poder responder: <b>fui eu que fiz</b>.</p>
+
+    <div class="usos">
+      <div class="uso">
+        <span class="u-ico">🐶</span>
+        <b>Para usar</b>
+        <span>Uma roupinha que nenhum outro pet do bairro tem, na cor que combina com ele.</span>
+      </div>
+      <div class="uso">
+        <span class="u-ico">🎁</span>
+        <b>Para presentear</b>
+        <span>Para o pet da amiga, da mãe, da vizinha. Roupinha feita à mão vira o presente que todo mundo comenta.</span>
+      </div>
+      <div class="uso">
+        <span class="u-ico">💰</span>
+        <b>Para vender</b>
+        <span>Roupinha pet tem procura o ano todo, e mais ainda no frio, no Natal e no Halloween.</span>
+      </div>
+      <div class="uso">
+        <span class="u-ico">✨</span>
+        <b>Para relaxar</b>
+        <span>Uma hora de crochê e a cabeça desliga. Muita gente começa por isso e não larga mais.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUANTO VALE · prova de mercado ============ -->
+<!-- R$ 20 de linha e "mais de R$ 100" a peca pronta sao os numeros do HEITOR, do doc "Criativos
+     Croche Pet" (roteiros-criativos.md, lido em 05/11/2026). Nao recalcular.
+     Os prints de anuncio (preco + vendidos) e os itens da lista "o que estao cobrando" ainda
+     NAO existem: estao como TROCAR. Quando ele mandar, trocar tambem a data na nota. -->
+<section class="vale">
+  <div class="wrap centro">
+    <span class="pill mostarda">Quanto vale a peça pronta</span>
+    <h2 style="margin:16px 0 12px">A linha cabe no bolso. <span class="script cr">A roupinha pronta, não.</span></h2>
+    <p class="sub">Uma roupinha sai por uns R$ 20 de linha. Pronta, passa fácil de R$ 100. Veja o que se cobra hoje por peças como as desta coleção.</p>
+
+    <div class="conta">
+      <div class="lado custo">
+        <span class="rotulo">O que você gasta</span>
+        <div class="valor">R$ 20<small>de linha por roupinha</small></div>
+        <ul>
+          <li>fio acrílico ou de algodão</li>
+          <li>botões, fitas ou aplicações</li>
+          <li>a agulha que você já tem</li>
+        </ul>
+      </div>
+      <div class="seta">→</div>
+      <div class="lado venda">
+        <span class="rotulo">O que estão cobrando</span>
+        <div class="valor">R$ 100<small>ou mais, a peça pronta</small></div>
+        <ul>
+          <li>Fantasia de abelha · R$ 110,16 · 8 mil vendidos</li>
+          <li>Vestido de crochê · R$ 91,53 · 3 mil+ vendidos</li>
+          <li>Roupinha listrada p/ gato · R$ 127,26 · 773 vendidos</li>
+          <li>Kit 2 roupinhas · R$ 97,89 · 1 mil vendidos</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="chamada-provas">Veja com seus próprios olhos <span class="seta-baixo">↓</span></p>
+
+    <!-- As imagens aparecem duas vezes: a segunda leva serve de emenda para o deslize voltar
+         ao começo. A lista sai do _montar.cjs (PROVAS). -->
+    <div class="trilho provas" id="provas">
+@@PROVAS@@
+    </div>
+
+    <p class="nota-mercado">Anúncios da Shopee e do Mercado Livre, novembro de 2026. O preço de venda depende do acabamento, das fotos e da divulgação de cada artesã.</p>
+
+    <div class="centro" style="margin-top:38px">
+      <button class="btn ir-oferta">QUERO APRENDER A FAZER</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUS ============ -->
+<!-- ESCONDIDA: o produto pet nao tem bonus prontos (regra: bonus prometido tem que existir).
+     Tirar o hidden e preencher BONUS no _montar.cjs quando existir. -->
+<section class="bonus" hidden>
+  <div class="wrap centro">
+    <span class="pill mostarda">Bônus inclusos</span>
+    <h2 style="margin:16px 0 12px">TROCAR-BONUS</h2>
+    <div class="bonus-lista" style="text-align:left">
+@@BONUS@@
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<!-- 6 slots com placeholder: nenhum depoimento real ainda. Nao inventar.
+     ESCONDIDA a pedido do Heitor (06/11) ate ele mandar os prints: tirar o hidden da section quando chegarem. -->
+<section class="deps" hidden>
+  <div class="wrap centro">
+    <span class="pill">Quem já está fazendo</span>
+    <h2 style="margin:16px 0 12px">O que dizem <span class="script cr">as alunas</span></h2>
+    <p class="sub">Conversas de quem recebeu o material e mandou foto da roupinha pronta.</p>
+  </div>
+
+  <div class="dep-palco" id="deps">
+    <button class="dep-seta ant" type="button" aria-label="Depoimento anterior">‹</button>
+    <div class="dep-trilho">
+@@DEPS@@
+    </div>
+    <button class="dep-seta prox" type="button" aria-label="Próximo depoimento">›</button>
+  </div>
+  <div class="dep-dots" id="deps-dots"></div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<!-- PLANO UNICO (decisao do Heitor, 06/11/2026): R$ 17,90, direto para o checkout.
+     Ancora "de R$ 47" no padrao da mochila (preco cheio riscado + economia); 62% = 47 -> 17,90.
+     Sem plano Completo, sem popup de upsell e sem bonus. -->
+<section class="oferta" id="oferta">
+  <div class="wrap centro">
+    <span class="pill">A oferta</span>
+    <h2 style="margin:16px 0 12px">Tudo isso, <span class="script cr">para sempre</span></h2>
+    <p class="sub">Pagamento único. Sem mensalidade, sem pegadinha.</p>
+
+    <div class="planos um" style="text-align:left">
+      <div class="plano destaque">
+        <span class="fita">Oferta exclusiva de hoje</span>
+        <div class="plano-nome">Coleção Roupinhas Pet</div>
+        <div class="linha-ancora">
+          <s>R$ 47</s>
+          <span class="economize">Economize R$ 29,10</span>
+        </div>
+        <div class="plano-preco"><small>R$</small>17,90</div>
+        <p class="plano-obs">As 50 receitas completas, num pagamento só.</p>
+        <div class="timer">⏱ A oferta expira em: <b id="relogio">09:59</b></div>
+        <ul class="inclui">
+          <li><span class="ckm">✓</span> 50 modelos de roupinhas pet em crochê</li>
+          <li><span class="ckm">✓</span> 100 páginas, 2 por modelo</li>
+          <li><span class="ckm">✓</span> Gráfico de cada parte da peça, com legenda dos pontos</li>
+          <li><span class="ckm">✓</span> Passo a passo com 6 fotos numeradas por modelo</li>
+          <li><span class="ckm">✓</span> Tabela de tamanhos do PP ao G (pescoço, tórax e costas)</li>
+          <li><span class="ckm">✓</span> Lista de materiais e receita curta de cada peça</li>
+          <li><span class="ckm">✓</span> Para cachorro e gato pequeno</li>
+          <li><span class="ckm">✓</span> PDF para baixar, acesso imediato e vitalício</li>
+        </ul>
+        <!-- R$ 17,90 — plano unico -->
+        <a href="https://pay.wiapy.com/rGR1KgkIvQL" class="btn full checkout" id="btn-plano">QUERO AS 50 RECEITAS</a>
+        <div class="selos-pgto">
+          <span>🔒 Compra segura</span><span>🛡️ 7 dias de garantia</span><span>⚡ Entrega imediata</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GARANTIA ============ -->
+<section class="garantia">
+  <div class="wrap estreito">
+    <div class="g-box">
+      <div class="selo"><b>7</b><span>dias</span></div>
+      <div>
+        <h3>O risco é todo meu</h3>
+        <p>Baixe, escolha uma roupinha e comece. Se em 7 dias você achar que não era para você, é só me mandar um e-mail e eu devolvo cada centavo. Sem perguntas, sem burocracia, sem precisar justificar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="wrap centro">
+    <span class="pill turq">Dúvidas</span>
+    <h2 style="margin:16px 0 12px">Perguntas que <span class="script tq">sempre chegam</span></h2>
+
+    <div class="lista-faq" style="text-align:left">
+      <details open>
+        <summary>Nunca fiz roupinha pet. Consigo mesmo assim?</summary>
+        <p>Consegue. Cada receita mostra o nível no topo da ficha, então você começa por um modelo fácil. Todas têm o gráfico de cada parte, a legenda dos pontos, uma receita curta e 6 fotos numeradas do passo a passo, do primeiro ponto ao acabamento.</p>
+      </details>
+      <details>
+        <summary>Como eu sei o tamanho certo do meu pet?</summary>
+        <p>Cada receita tem uma tabela com os tamanhos PP, P, M e G pelas medidas de pescoço, tórax e costas, e um desenho mostrando onde passar a fita métrica. A ficha também diz a faixa de peso do tamanho em que a peça foi feita. Você mede o pet, acha a linha da tabela e segue a contagem de pontos dela.</p>
+      </details>
+      <details>
+        <summary>Serve para gato?</summary>
+        <p>Serve para cachorro e gato pequenos. Tem modelo pensado para gato, como a touca de gatinho com as orelhas de fora, e várias peças servem para os dois.</p>
+      </details>
+      <details>
+        <summary>Como recebo o material?</summary>
+        <p>É digital. Assim que o pagamento é aprovado, o link chega no seu e-mail — em geral em menos de 2 minutos. Você baixa quantas vezes quiser e o acesso não expira.</p>
+      </details>
+      <details>
+        <summary>Preciso de impressora?</summary>
+        <p>Não. As páginas ficam boas impressas, mas dá para seguir tudo pelo celular ou tablet, ampliando o gráfico com os dedos. Muita gente prefere assim, porque não gasta tinta.</p>
+      </details>
+      <details>
+        <summary>Que material eu preciso comprar?</summary>
+        <p>A maioria dos modelos usa fio acrílico ou de algodão médio, agulha de crochê de 4 mm, agulha de tapeçaria, tesoura, marcadores de ponto e fita métrica. Cada receita lista o que aquele modelo pede, com as cores, os gramas de fio e os botões ou aplicações.</p>
+      </details>
+      <details>
+        <summary>Posso vender as roupinhas que eu fizer?</summary>
+        <p>Pode, sim. O que você não pode é revender ou distribuir os arquivos das receitas — o material é para seu uso. As peças que saem das suas mãos são suas.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias para pedir o reembolso integral, por e-mail, sem precisar explicar o motivo. O risco é meu.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>50 roupinhas esperando <span class="script" style="color:#F7D3B0">o seu pet</span></h2>
+    <p class="sub">A primeira pode sair ainda esta semana. E no próximo passeio, quando perguntarem onde você comprou, a resposta vai ser: fui eu que fiz.</p>
+
+    <div class="caixa-final">
+      <div class="de-final"><s>De R$ 47</s></div>
+      <div class="preco-final"><small>R$</small>17,90</div>
+      <div class="de-final">pagamento único · acesso vitalício</div>
+      <button class="btn full ir-oferta">QUERO COMEÇAR AGORA</button>
+      <div class="selos-pgto" style="color:#D1AE92">
+        <span>🔒 Compra segura</span><span>🛡️ 7 dias de garantia</span><span>⚡ Entrega imediata</span>
+      </div>
+    </div>
+
+    <p class="assinatura">Dúvidas antes de comprar? Fale com a gente pelo e-mail do rodapé.</p>
+  </div>
+</section>
+
+<footer>
+  <b>Crochê com Amor · Roupinhas Pet</b><br>
+  Material digital de uso pessoal. A reprodução ou revenda dos arquivos não é autorizada.<br>
+  Contato: <a href="mailto:suportedigitalht@gmail.com">suportedigitalht@gmail.com</a>
+</footer>
