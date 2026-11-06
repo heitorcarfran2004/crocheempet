@@ -26,6 +26,8 @@ const PALETA = [
 ];
 PALETA.forEach(([de, para]) => { css = typeof de === 'string' ? css.split(de).join(para) : css.replace(de, para); });
 css = css.replace('</style>', `
+  /* hero: leque com fundo transparente, sem o quadro arredondado nem sombra (pedido 06/11) */
+  .hero-img img{border-radius:0;box-shadow:none}
   .nota-mercado{margin:16px auto 0;max-width:620px;font-size:12.5px;color:var(--cinza);line-height:1.5}
   /* ---------- O QUE VAI RECEBER · as 2 paginas da receita ---------- */
   /* ordem da pagina: amostras (branco) > receber (creme) > desejo (branco) > vale (creme).
