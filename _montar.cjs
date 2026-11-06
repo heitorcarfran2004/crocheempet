@@ -26,6 +26,12 @@ const PALETA = [
 ];
 PALETA.forEach(([de, para]) => { css = typeof de === 'string' ? css.split(de).join(para) : css.replace(de, para); });
 css = css.replace('</style>', `
+  /* hero no celular: -15px entre subheadline e imagem, -10px entre imagem e botao (06/11) */
+  @media(max-width:820px){.hero-img{margin:9px 0 0}.hero-btn{margin-top:16px}}
+  /* ---------- CARROSSEL DE FOTOS DOS PETS (topo da secao dores, 06/11) ---------- */
+  .pets{margin:0 0 clamp(34px,5vw,48px);gap:12px;padding-bottom:0}
+  .pets figure{flex:0 0 clamp(132px,18vw,180px)}
+  .pets img{border-radius:16px;border:2px solid rgba(255,255,255,.18);box-shadow:0 10px 24px rgba(0,0,0,.25);background:transparent}
   /* hero: leque com fundo transparente, sem o quadro arredondado nem sombra (pedido 06/11) */
   .hero-img img{border-radius:0;box-shadow:none}
   .nota-mercado{margin:16px auto 0;max-width:620px;font-size:12.5px;color:var(--cinza);line-height:1.5}
@@ -218,7 +224,11 @@ const BONUS = [];
 const bonus = BONUS.map(() => '').join('\n');
 const listaBonus = '';
 
-corpo = corpo.replace('@@AMOSTRAS@@', am).replace('@@PROVAS@@', provas)
+// 50 fotos dos pets recortadas da pagina 1 de cada receita (entregaveis/roupa-pet-croche/landing/recortar-fotos.cjs)
+const PET_IMG = (n, oculto) => `      <figure${oculto ? ' aria-hidden="true"' : ''}><img src="assets/pets/pet-${n}.webp" alt="${oculto ? '' : 'Pet vestindo a roupinha de crochê do modelo ' + n}" width="400" height="400" loading="lazy" decoding="async"></figure>`;
+const N50 = Array.from({ length: 50 }, (_, i) => String(i + 1).padStart(2, '0'));
+const PETS_HTML = N50.map(n => PET_IMG(n, false)).concat(N50.map(n => PET_IMG(n, true))).join('\n');
+corpo = corpo.replace('@@PETS@@', PETS_HTML).replace('@@AMOSTRAS@@', am).replace('@@PROVAS@@', provas)
   .replace('@@BONUS@@', bonus).replace('@@DEPS@@', deps).replace('@@LISTA_BONUS@@', listaBonus);
 
 // ---------- scripts do fim: identicos aos da micanga ----------
@@ -227,6 +237,9 @@ let js = base.slice(base.lastIndexOf('<script>'), base.lastIndexOf('</script>') 
 const iPop = js.indexOf('  // Popup de upsell'), fPop = js.indexOf('  // contagem regressiva');
 if (iPop < 0 || fPop < iPop) throw new Error('nao achei o bloco do popup no JS da micanga');
 js = js.slice(0, iPop) + js.slice(fPop);
+// carrossel das fotos dos pets (secao dores) usa o mesmo deslize dos outros
+if (!js.includes("deslizar('provas')")) throw new Error('deslizar provas nao achado');
+js = js.replace("deslizar('provas')", "deslizar('provas');\n  deslizar('pets')");
 
 // visualizador das paginas da receita (igual mochila). Nao mexe no historico.
 const ZOOM = `<script>
